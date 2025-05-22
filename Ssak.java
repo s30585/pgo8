@@ -19,6 +19,10 @@ public class Ssak extends Zwierze {
         return "Ssak chodzi";
     }
 
+    public void rodzajFutra(){
+        System.out.println("Rodzaj futra: " + futro);
+    }
+
     @Override
     public String srodowiskoNaturalne() {
         return "Lasy";
@@ -27,6 +31,6 @@ public class Ssak extends Zwierze {
     @Override
     public void wyswietlInformacje() {
         super.wyswietlInformacje();
-        System.out.println("Rodzaj futra: " + futro);
+        rodzajFutra();
     }
 }
