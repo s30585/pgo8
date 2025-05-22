@@ -19,6 +19,10 @@ public class Gad extends Zwierze {
         return "Gad człapie";
     }
 
+    public void typSkory() {
+        System.out.println("Typ skóry: " + typSkory);
+    }
+
     @Override
     public String srodowiskoNaturalne() {
         return "Bagno";
@@ -27,7 +31,7 @@ public class Gad extends Zwierze {
     @Override
     public void wyswietlInformacje() {
         super.wyswietlInformacje();
-        System.out.println("Typ skóry: " + typSkory);
+        typSkory();
     }
 
 }
