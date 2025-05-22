@@ -18,6 +18,9 @@ public class Ptak extends Zwierze {
     public String poruszajSie() {
         return "Ptak lata";
     }
+    public void rodzajUpierzenia() {
+        System.out.println("Upierzenie: " + upierzenie);
+    }
 
     @Override
     public String srodowiskoNaturalne() {
@@ -27,6 +30,6 @@ public class Ptak extends Zwierze {
     @Override
     public void wyswietlInformacje() {
         super.wyswietlInformacje();
-        System.out.println("Upierzenie: " + upierzenie);
+        rodzajUpierzenia();
     }
 }
